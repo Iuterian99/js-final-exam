@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./bootstrap-5.0.2-dist/js/bootstrap.min.js">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="h1 text-center mt-3">Users API</h1>
+    <div class="row mt-5">
+      <div class="col-4">
+        <h2 class="h2">Users</h2>
+        <p class="total-numbers-users">count of users:</p>
+        <ul class="user-list list-unstyled"></ul>
+      </div>
+      <div class="col-4 border border-info border-top-0 border-bottom-0 ps-2 pe-2">
+        <h2 class="h2">Posts</h2>
+        <p class="total-numbers-posts">count of posts:</p>
+        <ul class="post-list list-unstyled"></ul>
+      </div>
+      <div class="col-4">
+        <h2 class="h2">Comments</h2>
+        <p class="total-numbers-comments">count of comments:</p>
+        <ul class="comment-list list-unstyled"></ul>
+      </div>
+    </div>
+
+    <template id="users-template">
+      <li class="user-list-item border border-info ps-2 mb-3">
+        <a class="users__template-link d-block fw-bolder" href="#">Abduhalim.orziqulov</a>
+        <p class="d-inline">Email:</p>
+        <a class="users__template-email" href="#">Email: </a>
+        <p class="users__template-country">Country: </p>
+        <p class="users__template-company">Company: </p>
+        <p class="d-inline">Website:</p>
+        <a class="users__template-website" href="#">Website: </a>
+      </li>
+    </template>
+
+    <template id="post-template">
+      <li class="post-list-item border border-info ps-2 mb-3">
+        <a class="post-title fw-bolder" href="#">lorem</a>
+        <p class="post-body">Lorem, ipsum.</p>
+      </li>
+    </template>
+
+    <template id="comment-template">
+      <li class="comment-list-item border border-info ps-2 mb-3">
+        <p class="comment-title">Lorem, ipsum.</p>
+        <p class="d-inline">Email: </p>
+        <a class="comment-mail" href="#">lorem</a>
+        <p class="comments-comment">Lorem, ipsum.</p>
+      </li>
+    </template>
+
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
